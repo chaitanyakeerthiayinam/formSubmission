@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="/form-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Validation</h1>
+        <form action="/submit" method="POST" enctype="multipart/form-data">
+            <div class="detail">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="detail">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="detail">
+                <label for="image">Image:</label>
+                <input type="file" name="image" id="image">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <% if (errors) { %>
+            <div class="error-container">
+                <h3>Error(s):</h3>
+                <ul>
+                    <% errors.forEach(error => { %>
+                        <li><%= error.msg %></li>
+                    <% }) %>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>

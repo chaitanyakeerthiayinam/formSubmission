@@ -1,0 +1,35 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.detail {
+    margin-bottom: 15px;
+}
+
+.detail label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail span, .detail img {
+    display: block;
+    margin-top: 5px;
+}
+
+.detail img {
+    width: 300px; /* Width of the image */
+    height: 180px; /* Height of the image */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
